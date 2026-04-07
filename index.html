@@ -1,1 +1,246 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portia Noir</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #08060d;
+      color: #f3eefe;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #120018, #2a0d3d, #120018);
+      padding: 28px 20px;
+      text-align: center;
+      border-bottom: 1px solid #7b3fe4;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      color: #d7b8ff;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #d9c9ef;
+      margin-top: 8px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 14px;
+      background: #110b18;
+      border-bottom: 1px solid #332043;
+    }
+
+    nav a {
+      color: #e7dbfa;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #b985ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #e2c8ff;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #d1c2e2;
+      max-width: 650px;
+      margin: 0 auto 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #7b3fe4;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #965cff;
+    }
+
+    .section {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .accordion {
+      background: #15101d;
+      color: #f3eefe;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: 1px solid #4e2c72;
+      border-radius: 8px;
+      text-align: left;
+      font-size: 1.05rem;
+      margin-top: 14px;
+    }
+
+    .accordion:hover {
+      background: #1d1528;
+    }
+
+    .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: #0f0b15;
+      border-left: 1px solid #4e2c72;
+      border-right: 1px solid #4e2c72;
+      border-bottom: 1px solid #4e2c72;
+      border-radius: 0 0 8px 8px;
+      padding: 0 18px;
+    }
+
+    .card {
+      padding: 18px 0;
+      border-bottom: 1px solid #2d2338;
+    }
+
+    .card:last-child {
+      border-bottom: none;
+    }
+
+    .card h3 {
+      color: #d7b8ff;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      display: block;
+      color: #b985ff;
+      font-weight: bold;
+      margin: 8px 0 12px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 24px;
+      background: #100a16;
+      color: #cdbde2;
+      border-top: 1px solid #332043;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portia Noir</h1>
+    <p>Exclusive content, private releases, and limited shop drops</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#store">Store</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>A private luxury creator storefront</h2>
+    <p>
+      Access exclusive content, limited releases, and curated items in a sleek members-first experience.
+    </p>
+    <a href="#store" class="btn">Browse Store</a>
+  </section>
+
+  <section class="section" id="store">
+    <button class="accordion">Video Collection</button>
+    <div class="panel">
+      <div class="card">
+        <h3>Exclusive Release 01</h3>
+        <p>Premium members-only video content.</p>
+        <span class="price">$24.99</span>
+        <a href="#" class="btn">Buy Access</a>
+      </div>
+
+      <div class="card">
+        <h3>Exclusive Release 02</h3>
+        <p>Private digital release with limited availability.</p>
+        <span class="price">$29.99</span>
+        <a href="#" class="btn">Buy Access</a>
+      </div>
+    </div>
+
+    <button class="accordion">Shop</button>
+    <div class="panel">
+      <div class="card">
+        <h3>Signature Item</h3>
+        <p>Limited collectible merchandise.</p>
+        <span class="price">$49.99</span>
+        <a href="#" class="btn">Purchase</a>
+      </div>
+
+      <div class="card">
+        <h3>VIP Bundle</h3>
+        <p>Curated premium package with exclusive extras.</p>
+        <span class="price">$79.99</span>
+        <a href="#" class="btn">Purchase</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2 style="color:#d7b8ff; margin-bottom:10px;">About</h2>
+    <p>
+      Portia Noir is a luxury creator brand focused on private digital releases, curated drops, and a polished direct-to-fan experience.
+    </p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 style="color:#d7b8ff; margin-bottom:10px;">Contact</h2>
+    <p>Email: your@email.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Portia Noir. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(button => {
+      button.addEventListener("click", function() {
+        const panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
